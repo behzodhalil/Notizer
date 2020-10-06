@@ -9,15 +9,6 @@
 
 ![](https://github.com/behzod1996/Notizer/blob/master/android-mvvm-pattern.png)
 
-# Room
-
-<p align="left">
-  <img src="https://github.com/behzod1996/Notizer/blob/master/mYsKP.png" width="500">
-</p>
-
-# Corountines
-
-![](https://github.com/behzod1996/Notizer/blob/master/cooperation-coroutines.png)
 
 ## Built With 🛠
 - [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
@@ -26,7 +17,6 @@
   - [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) - Data objects that notify views when the underlying database changes.
   - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Stores UI-related data that isn't destroyed on UI changes. 
   - [Room](https://developer.android.com/topic/libraries/architecture/room) - SQLite object mapping library.
-  - [Jetpack Navigation](https://developer.android.com/guide/navigation) - Navigation refers to the interactions that allow users to navigate across, into, and back out from the different pieces of content within your app
 - [Material Components for Android](https://github.com/material-components/material-components-android) - Modular and customizable Material Design UI components for Android.
 
 
