@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorMulledWine">#413C66</color>
+    <color name="colorDoveGray">#707070</color>
+    <color name="colorMediumPurple">#8A79EE</color>
+    <color name="colorPrimrose">#F0E7A0</color>
+    <color name="colorSuo">#EE7979</color>
+    <color name="colorKimberly">#676295</color>
+    <color name="colorWind">#67BAAD</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorSantaGray">#A4A1B7</color>
+
+
+</resources>

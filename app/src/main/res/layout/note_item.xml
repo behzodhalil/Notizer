@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <data>
+        <variable
+            name="note"
+            type="com.hfad.notizer.model.Note" />
+    </data>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/materialCardView"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:src="@drawable/bg_note"
+    app:cardBackgroundColor="@color/colorMulledWine"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="10dp">
+
+    <View
+        android:id="@+id/lineViewNote"
+        android:layout_width="6dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/line_view"
+        android:orientation="horizontal" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cabin_medium"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.016"
+            android:text="@{note.title}"
+            tools:text="@string/note_item_title" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/cabin_medium"
+            android:includeFontPadding="false"
+            android:text="@{note.date}"
+            android:textColor="@color/colorSantaGray"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_editor_absoluteX="0dp"
+            app:layout_editor_absoluteY="0dp"
+            tools:ignore="smallSp"
+            tools:text="@string/note_item_date" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/cabin_medium"
+            android:lines="2"
+            android:text="@{note.desc}"
+            android:textColor="@color/colorSantaGray"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/layoutConstraint"
+            app:layout_constraintTop_toBottomOf="@id/date"
+            app:layout_constraintVertical_bias="0.461"
+            app:layout_editor_absoluteX="0dp"
+            app:layout_editor_absoluteY="0dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:text="@string/note_item_desc" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgNoteAdd"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:adjustViewBounds="true"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/layoutConstraint"
+            app:layout_constraintEnd_toEndOf="@id/layoutConstraint"
+            app:layout_constraintHorizontal_bias="0.945"
+            app:layout_constraintStart_toStartOf="@id/title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius_top_left="10dp"
+            app:riv_corner_radius_top_right="10dp"
+            android:contentDescription="@string/note_item_img"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
+</layout>

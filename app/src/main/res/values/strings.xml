@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Notizer</string>
+
+
+    <!--Main Texts-->
+    <string name="search_notes">Search Notes</string>
+
+    <!--Notizer Item Texts-->
+    <string name="note_item_title">Bucket List - 2020</string>
+    <string name="note_item_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="note_item_date">2020.09.26</string>
+    <string name="note_item_img">Notizer Image</string>
+
+    <!--Add Note Texts-->
+    <string name="add_note_title">Enter title</string>
+    <string name="add_note_desc">Enter description</string>
+    <string name="add_note_back">Back</string>
+    <string name="add_note_save">Save</string>
+    <string name="add_note_img">Image</string>
+    <string name="todo">TODO</string>
+
+    <!--Layout Colors-->
+    <string name="colors">Colors</string>
+    <string name="pick_color">Pick Color</string>
+
+</resources>
